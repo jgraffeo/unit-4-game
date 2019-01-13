@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div class="container">
+        <!--Crystal Collector Jumbotron-->
+        <div class="jumbotron" style="background-color: teal; color: white">
+            <div class="container">
+                <h1 class="text-center"><strong>Welcome to the Crystal Collector!</strong></h1>
+            </div>
+        </div>
+
+
+        <!--Main Content-->
+        <div class="row">
+            <!--Instructions Container-->
+            <div class="col-lg-12">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Instructions</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p><small>
+                                There will be four crystals displayed as buttons on the page. 
+                                The player will be shown a random number at the start of the game. 
+                                When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+                                Your game will hide this amount until the player clicks a crystal. 
+                                When they do click one, update the player's score counter. 
+                                The player wins if their total score matches the random number from the beginning of the game. 
+                                The player loses if their score goes above the random number. 
+                                The game restarts whenever the player wins or loses. 
+                                When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+                        </small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <!--Target Score-->
+            <div class="col-lg-3">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Target Score</h3>
+                    </div>
+                    <div class="panel-body">
+                       <h3 class="text-center" id="targetScore"><strong></strong></h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Your Score-->
+            <div class="col-lg-3">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Your Score</h3>
+                    </div>
+                    <div class="panel-body">
+                       <h3 class="text-center" id="yourScore"><strong></strong></h3>
+                    </div>
+                </div>
+            </div>
+             
+            <!--Crystals-->
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Crystal Selection</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <img src="assets/images/blue.png" alt="" id="blue">
+                        <img src="assets/images/green.png" alt="" id="green">
+                        <img src="assets/images/red.png" alt="" id="red">
+                        <img src="assets/images/yellow.png" alt="" id="yellow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--Counters Row-->
+        <div class="row">
+            
+            <!--Win Count-->
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Win Count</h3>
+                    </div>
+                    <div class="panel-body">
+                       <h3 class="text-center" id="winCount">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--Loss Count-->
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Loss Count</h3>
+                    </div>
+                    <div class="panel-body">
+                       <h3 class="text-center" id="lossCount">0</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <!--My javascript file-->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
